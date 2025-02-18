@@ -1,0 +1,24 @@
+<script>
+    /*
+    PROBLEMA: CALCULAR CUBO DE UM NÚMERO
+    Peça para o usuário informar um número inteiro.
+    Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
+    */
+
+    let numero = Number(`Digite um número`);
+
+    let aoCubo = 0;
+    function cubador(a) {
+        if (!isNaN(numero)) {
+            aoCubo = a * a * a;
+            aoCubo = `O cubo desse número é ${aoCubo}`;
+        }
+        else {
+            aoCubo = "Não é um número";
+        }
+        return aoCubo;
+    }
+    let resultado = cubador(numero);
+    document.write(`${resultado}`)
+
+</script>

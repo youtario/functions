@@ -1,0 +1,18 @@
+<script>
+    /*
+    PROBLEMA: CONVERSÃO PARA CELSIUS
+    Desenvolva um programa em JavaScript que contenha uma função para a conversão de uma temperatura em graus Fahrenheit para Celsius. A fórmula de conversão é a seguinte:
+    C = (F - 32) * 5 / 9
+    */
+
+    let fahrenheit = Number(prompt(`Digite quantos graus está fazendo`));
+
+let graus = 0;
+function conversao(a) {
+    graus = (a - 32) * 5 / 9;
+    return graus;
+}
+let resultado = conversao(fahrenheit);
+alert(`Em fahrenheit está fazendo ${fahrenheit}°F`);
+
+</script>
